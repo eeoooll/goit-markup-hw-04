@@ -164,9 +164,10 @@ address {
 }
 
 .hero-title {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   color: var(--background-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -211,8 +212,7 @@ address {
 
 .section-title {
   color: var(--title-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* section description */
@@ -227,7 +227,6 @@ address {
 }
 
 .section-title.desc {
-  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -244,13 +243,17 @@ address {
 }
 
 /*------------- section working */
+.section-working{
+  padding-top: 0;
+}
+
 .working-container {
   display: flex;
 }
 
 .section-title.working,
 .section-title.team {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -281,7 +284,6 @@ address {
 }
 
 .card-text {
-  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -300,6 +302,11 @@ address {
   margin-right: 30px;
 }
 
+.card-description{
+  padding: 30px 10px;
+
+}
+
 /*________________________________________footer________________________________________*/
 .footer {
   padding-top: 60px;
@@ -316,11 +323,12 @@ address {
 }
 
 .logo-footer {
-  padding-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-item:not(:nth-child(3n)) {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-cont,
@@ -377,10 +385,6 @@ address {
   margin-bottom: 30px;
 }
 
-.project-item {
-  /* border: 1px solid var(--border-project-color); */
-}
-
 .project-item-border {
   border: 1px solid var(--border-project-color);
   border-top: none;
@@ -388,7 +392,7 @@ address {
 }
 
 .portfolio-project-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
