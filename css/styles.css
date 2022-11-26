@@ -148,6 +148,21 @@ address {
   margin-left: auto;
 }
 
+.link-contacts{
+  display: flex;
+  align-items: center;
+  fill: #757575;
+}
+
+.link-contacts:hover,
+.link-contacts:hover{
+  fill: var(--accent-color);
+}
+
+.retreat{
+  margin-right: 10px;
+}
+
 .contacts-list .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -245,6 +260,17 @@ address {
   width: 270px;
 }
 
+.feature-list-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .desk-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
@@ -258,8 +284,10 @@ address {
   display: flex;
 }
 
+/* --------------------titles h2 */
 .section-title.working,
-.section-title.team {
+.section-title.team,
+.section-title.clients {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -314,34 +342,77 @@ address {
   padding: 30px 10px;
 
 }
-/* =======================social links */
+/* =======================social links (team, footer) */
 .social-list{
   display: flex;
   justify-content: center;
 }
 
-.social-list-icon{
-  fill: #afb1b8;
+.social-list-item{
+  width: 44px;
+  height: 44px;
 }
 
 .social-list-link{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
   border-radius: 50%;
+  fill: #afb1b8;
 }
 
 .social-list-link:hover,
 .social-list-link:focus{
   background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
   fill: #ffffff;
 }
 
 .social-list-item:not(:nth-child(4n)) {
   margin-right: 10px;
+}
+
+/*---------------------------section clients */
+
+.clients-container {
+  display: flex;
+}
+
+.client-item{
+  width: 170px;
+  height: 92px;
+}
+
+
+.client-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon{
+fill: var(--accent-color);
+}
+
+.client-list-link:hover,
+.client-list-link:focus{
+  border-color: var(--accent-color);
+}
+
+.client-item:not(:nth-child(6n)) {
+  margin-right: 30px;
 }
 
 /*________________________________________footer________________________________________*/
@@ -352,6 +423,51 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts-link{
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer-social-block{
+  width: 206px;
+}
+
+.footer-social-text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer-social-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #ffffff;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus{
+  background-color: var(--accent-color);
+}
+
+.footer-social-list-link:hover .social-list-icon,
+.footer-social-list-link:focus .social-list-icon{
+  fill: #ffffff;
 }
 
 .logo-footer-second-color,
@@ -407,6 +523,10 @@ address {
 .button-filter:focus {
   background-color: var(--accent-color);
   color: var(--background-text-color);
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-items {
@@ -422,10 +542,24 @@ address {
   margin-bottom: 30px;
 }
 
+.project-item{
+  width: 370px;
+  height: 404px;
+}
+
 .project-item-border {
   border: 1px solid var(--border-project-color);
   border-top: none;
   padding: 20px 24px;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus{
+  display: block;
+  box-shadow: 
+  0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-project-title {
